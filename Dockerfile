@@ -28,4 +28,4 @@ RUN apk add --no-cache bash
 
 WORKDIR $ZOOKEEPER_HOME
 
-ENTRYPOINT ${ZOOKEEPER_BIN_DIR}/bin/zkServer.sh start
+ENTRYPOINT ${ZOOKEEPER_BIN_DIR}/bin/zkServer.sh start-foreground
